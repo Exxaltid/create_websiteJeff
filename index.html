@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jeffrey Efa - Academic Profile</title>
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -27,6 +30,8 @@
             margin: 0 auto;
             padding: 2rem;
         }
+
+        /* Navigation */
 
         nav {
             display: flex;
@@ -55,6 +60,8 @@
         .nav-links a:hover {
             color: #2196F3;
         }
+
+        /* Profile Section */
 
         .profile-section {
             display: grid;
@@ -87,6 +94,8 @@
             margin-bottom: 1rem;
         }
 
+        /* Social Links */
+
         .social-links {
             display: flex;
             flex-direction: column;
@@ -117,7 +126,8 @@
             margin-right: 0.5rem;
         }
 
-        /* Colorful icons */
+        /* Social Link Colors */
+
         .social-link.linkedin i {
             color: #0077b5;
         }
@@ -142,7 +152,8 @@
             color: #34a853;
         }
 
-        /* Hover effects */
+        /* Social Link Hover Effects */
+
         .social-link:hover {
             transform: translateX(5px);
             background-color: #f8f9fa;
@@ -172,6 +183,8 @@
             background-color: #f2f8f4;
         }
 
+        /* Main Content */
+
         .main-content h2 {
             font-size: 2rem;
             color: #333;
@@ -181,6 +194,10 @@
         .content-block {
             margin-bottom: 1.5rem;
             line-height: 1.8;
+        }
+
+        .content-block p {
+            margin-bottom: 1rem;
         }
 
         .highlight-link {
@@ -194,11 +211,8 @@
             color: #1976D2;
         }
 
-        .content-block p {
-            margin-bottom: 1rem;
-        }
-
         /* Skills Section */
+
         .skills-section {
             margin-top: 2.5rem;
         }
@@ -209,22 +223,40 @@
             margin-bottom: 1.5rem;
         }
 
-        .skills-category {
-            margin-bottom: 1.5rem;
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
         }
 
-        .skills-category h3 {
+        .skills-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 1.25rem;
+            background-color: #fafafa;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .skills-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .skills-card h3 {
             font-size: 1.1rem;
-            margin-bottom: 0.5rem;
             color: #333;
+            margin-bottom: 0.75rem;
         }
 
-        .skills-category p {
+        .skills-card p {
             color: #666;
-            line-height: 1.8;
+            line-height: 1.7;
         }
+
+        /* Mobile Layout */
 
         @media (max-width: 768px) {
+
             .profile-section {
                 grid-template-columns: 1fr;
             }
@@ -241,7 +273,12 @@
             .social-link {
                 justify-content: center;
             }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
+
     </style>
 </head>
 
@@ -250,18 +287,34 @@
     <div class="container">
 
         <!-- Navigation -->
+
         <nav>
-            <a href="index.html" class="name-title">Jeffrey Efa</a>
+
+            <a href="index.html" class="name-title">
+                Jeffrey Efa
+            </a>
 
             <div class="nav-links">
-                <a href="projects.html">Projects</a>
-                <a href="files/Jeffrey Efa resume 2025.pdf" target="_blank">CV</a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="files/Jeffrey Efa resume 2025.pdf"
+                   target="_blank">
+                    CV
+                </a>
+
             </div>
+
         </nav>
+
 
         <div class="profile-section">
 
+
             <!-- Profile Sidebar -->
+
             <div class="profile-sidebar">
 
                 <img src="images/profile.jpg"
@@ -274,12 +327,18 @@
                     Interests in Software Engineering, Computer Networks.
                 </p>
 
+
                 <div class="social-links">
 
-                    <a href="#" class="social-link location">
+                    <a href="#"
+                       class="social-link location">
+
                         <i class="fas fa-map-marker-alt"></i>
+
                         Lubbock, Texas, United States
+
                     </a>
+
 
                     <a href="https://www.ttu.edu"
                        class="social-link university"
@@ -290,57 +349,81 @@
                              class="ttu-logo">
 
                         Texas Tech University
+
                     </a>
+
 
                     <a href="mailto:efa.jeffrey@gmail.com"
                        class="social-link email">
 
                         <i class="fas fa-envelope"></i>
+
                         Email
+
                     </a>
+
 
                     <a href="https://github.com/Exxaltid"
                        class="social-link github"
                        target="_blank">
 
                         <i class="fab fa-github"></i>
+
                         Github
+
                     </a>
+
 
                     <a href="https://www.linkedin.com/in/jeffrey-efa-607292/"
                        class="social-link linkedin"
                        target="_blank">
 
                         <i class="fab fa-linkedin"></i>
+
                         LinkedIn
+
                     </a>
 
                 </div>
+
             </div>
 
+
             <!-- Main Content -->
+
             <div class="main-content">
 
+
                 <!-- About Me -->
+
                 <h2>About me</h2>
 
+
                 <div class="content-block">
+
                     <p>
                         I am Jeffrey Efa and I am a fourth year student who joined
                         the department of Computer Science student in Fall 2024 at
+
                         <a href="https://www.ttu.edu"
                            class="highlight-link"
                            target="_blank">
+
                             Texas Tech University
+
                         </a>,
+
                         where I have developed a strong interest in software
                         engineering and computer networking and enjoy learning
                         how software systems are designed, built, and communicate
                         with one another.
                     </p>
+
                 </div>
 
+
                 <div class="content-block">
+
                     <p>
                         My coursework has given me experience with programming,
                         object-oriented design, data structures, databases,
@@ -349,9 +432,12 @@
                         them to projects where I can strengthen both my technical
                         skills and my ability to solve problems.
                     </p>
+
                 </div>
 
+
                 <div class="content-block">
+
                     <p>
                         My technical interests center around software engineering,
                         particularly backend development and distributed systems.
@@ -361,9 +447,12 @@
                         and fault tolerance have especially interested me as I
                         continue exploring different areas of software development.
                     </p>
+
                 </div>
 
+
                 <div class="content-block">
+
                     <p>
                         Outside of Academics, I enjoy staying active by going to the
                         gym and playing sports. I value having a balance between my
@@ -371,47 +460,75 @@
                         opportunities to challenge myself, learn something new, and
                         continue growing both personally and professionally.
                     </p>
+
                 </div>
 
+
                 <!-- Technical Skills -->
+
                 <div class="skills-section">
 
                     <h2>Technical Skills</h2>
 
-                    <div class="skills-category">
-                        <h3>Programming Languages</h3>
-                        <p>
-                            Python, Java, C, C++, JavaScript, HTML, CSS, SQL
-                        </p>
-                    </div>
 
-                    <div class="skills-category">
-                        <h3>Frameworks & Technologies</h3>
-                        <p>
-                            React, Node.js, MongoDB, Firebase
-                        </p>
-                    </div>
+                    <div class="skills-grid">
 
-                    <div class="skills-category">
-                        <h3>Development Tools</h3>
-                        <p>
-                            Git, GitHub, Visual Studio, Visual Studio Code, Linux
-                        </p>
-                    </div>
 
-                    <div class="skills-category">
-                        <h3>Software Development</h3>
-                        <p>
-                            Object-Oriented Programming, RESTful APIs,
-                            Agile/Scrum, Database Design
-                        </p>
+                        <div class="skills-card">
+
+                            <h3>Programming Languages</h3>
+
+                            <p>
+                                Python, Java, C, C++, JavaScript, HTML, CSS, SQL
+                            </p>
+
+                        </div>
+
+
+                        <div class="skills-card">
+
+                            <h3>Frameworks & Technologies</h3>
+
+                            <p>
+                                React, Node.js, MongoDB, Firebase
+                            </p>
+
+                        </div>
+
+
+                        <div class="skills-card">
+
+                            <h3>Development Tools</h3>
+
+                            <p>
+                                Git, GitHub, Visual Studio, Visual Studio Code, Linux
+                            </p>
+
+                        </div>
+
+
+                        <div class="skills-card">
+
+                            <h3>Software Development</h3>
+
+                            <p>
+                                Object-Oriented Programming, RESTful APIs,
+                                Agile/Scrum, Database Design
+                            </p>
+
+                        </div>
+
+
                     </div>
 
                 </div>
 
             </div>
+
         </div>
+
     </div>
 
 </body>
+
 </html>
